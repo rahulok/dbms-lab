@@ -8,12 +8,12 @@
 --> desc stud; 	    //To view information about the table
 --> select table_name from user_tables;	    //For list of all tables
 --> alter table stud
-    add branch varchar(10);
+    add branch varchar(10);             //Add a new branch
 --> update stud
     set branch = 'CSE';     //All branches are CSE now
 --> update stud set branch = 'MECH' where name='thanos';        
 --> alter table stud 
     modify sem varchar(5);      //To change datatype of a column (only if it is empty)
-
-
-                
+--> update stud 
+    set attendance = attendance+(attendance*0.01);      //To change attendance of all students by 1%
+--> dbms_random.value(1,100);       //Will generate values between 1 and 100 (real number)
